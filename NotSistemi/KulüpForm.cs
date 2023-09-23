@@ -57,21 +57,28 @@ namespace NotSistemi
             }
             else
             {
-                MessageBox.Show("Hatalı işlem yapıldı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Boş girdi yapmayınız", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }        
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {
-            baglanti.Open();
-            SqlCommand KulüpGuncelle = new SqlCommand("Update Tbl_Kulüpler Set Kulüpad=@k1 Where Kulüpid=@k2", baglanti);
-            KulüpGuncelle.Parameters.AddWithValue("@k1",TxtKlpad.Text);
-            KulüpGuncelle.Parameters.AddWithValue("@k2", TxtKlpid.Text);
-            KulüpGuncelle.ExecuteNonQuery();
-            baglanti.Close();
-            MessageBox.Show("Kulüp güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //Kulüpleri Listele
-            KulüpListele();
+            if (TxtKlpad.Text != "" && TxtKlpid.Text != "") {
+                baglanti.Open();
+                SqlCommand KulüpGuncelle = new SqlCommand("Update Tbl_Kulüpler Set Kulüpad=@k1 Where Kulüpid=@k2", baglanti);
+                KulüpGuncelle.Parameters.AddWithValue("@k1", TxtKlpad.Text);
+                KulüpGuncelle.Parameters.AddWithValue("@k2", TxtKlpid.Text);
+                KulüpGuncelle.ExecuteNonQuery();
+                baglanti.Close();
+                MessageBox.Show("Kulüp güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //Kulüpleri Listele
+                KulüpListele();
+            }
+            else
+            {
+                MessageBox.Show("Lütfen güncelleyeceğiniz kulübü seçiniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
         private void BtnSil_Click(object sender, EventArgs e)
@@ -89,7 +96,7 @@ namespace NotSistemi
             }
             else
             {
-                MessageBox.Show("Hatalı işlem yapıldı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Lütfen sileceğiniz kulübü seçiniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

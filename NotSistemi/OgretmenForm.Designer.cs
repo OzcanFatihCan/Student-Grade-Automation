@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OgretmenForm));
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnDers = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BtnKulüp = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnSinav = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnOgrt = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BtnOgr = new System.Windows.Forms.Button();
             this.BtnKapat = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -48,17 +48,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnKapat)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnDers
             // 
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(19, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(237, 53);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "DERS İŞLEMLERİ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnDers.BackColor = System.Drawing.Color.SteelBlue;
+            this.BtnDers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDers.Location = new System.Drawing.Point(19, 15);
+            this.BtnDers.Name = "BtnDers";
+            this.BtnDers.Size = new System.Drawing.Size(237, 53);
+            this.BtnDers.TabIndex = 0;
+            this.BtnDers.Text = "DERS İŞLEMLERİ";
+            this.BtnDers.UseVisualStyleBackColor = false;
+            this.BtnDers.Click += new System.EventHandler(this.BtnDers_Click);
             // 
             // pictureBox1
             // 
@@ -103,17 +104,17 @@
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
-            // button3
+            // BtnSinav
             // 
-            this.button3.BackColor = System.Drawing.Color.SteelBlue;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(19, 147);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(237, 53);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "SINAV NOTLARI";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnSinav.BackColor = System.Drawing.Color.SteelBlue;
+            this.BtnSinav.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSinav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSinav.Location = new System.Drawing.Point(19, 147);
+            this.BtnSinav.Name = "BtnSinav";
+            this.BtnSinav.Size = new System.Drawing.Size(237, 53);
+            this.BtnSinav.TabIndex = 4;
+            this.BtnSinav.Text = "SINAV NOTLARI";
+            this.BtnSinav.UseVisualStyleBackColor = false;
             // 
             // pictureBox4
             // 
@@ -125,17 +126,18 @@
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             // 
-            // button4
+            // BtnOgrt
             // 
-            this.button4.BackColor = System.Drawing.Color.SteelBlue;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(142, 213);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(237, 53);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "ÖĞRETMENLER";
-            this.button4.UseVisualStyleBackColor = false;
+            this.BtnOgrt.BackColor = System.Drawing.Color.SteelBlue;
+            this.BtnOgrt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnOgrt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnOgrt.Location = new System.Drawing.Point(142, 213);
+            this.BtnOgrt.Name = "BtnOgrt";
+            this.BtnOgrt.Size = new System.Drawing.Size(237, 53);
+            this.BtnOgrt.TabIndex = 6;
+            this.BtnOgrt.Text = "ÖĞRETMENLER";
+            this.BtnOgrt.UseVisualStyleBackColor = false;
+            this.BtnOgrt.Click += new System.EventHandler(this.BtnOgrt_Click);
             // 
             // pictureBox5
             // 
@@ -147,17 +149,18 @@
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
             // 
-            // button5
+            // BtnOgr
             // 
-            this.button5.BackColor = System.Drawing.Color.SteelBlue;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(19, 279);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(237, 53);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "ÖĞRENCİ İŞLEMLERİ";
-            this.button5.UseVisualStyleBackColor = false;
+            this.BtnOgr.BackColor = System.Drawing.Color.SteelBlue;
+            this.BtnOgr.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnOgr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnOgr.Location = new System.Drawing.Point(19, 279);
+            this.BtnOgr.Name = "BtnOgr";
+            this.BtnOgr.Size = new System.Drawing.Size(237, 53);
+            this.BtnOgr.TabIndex = 8;
+            this.BtnOgr.Text = "ÖĞRENCİ İŞLEMLERİ";
+            this.BtnOgr.UseVisualStyleBackColor = false;
+            this.BtnOgr.Click += new System.EventHandler(this.BtnOgr_Click);
             // 
             // BtnKapat
             // 
@@ -182,15 +185,15 @@
             this.ClientSize = new System.Drawing.Size(400, 400);
             this.Controls.Add(this.BtnKapat);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.BtnOgr);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.BtnOgrt);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BtnSinav);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.BtnKulüp);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnDers);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -211,16 +214,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnDers;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button BtnKulüp;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnSinav;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnOgrt;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button BtnOgr;
         private System.Windows.Forms.PictureBox BtnKapat;
     }
 }

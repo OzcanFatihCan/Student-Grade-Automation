@@ -52,11 +52,28 @@
     <Compile Include="AnaForm.Designer.cs">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DerslerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DerslerForm.Designer.cs">
+      <DependentUpon>DerslerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="KulüpForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="KulüpForm.Designer.cs">
       <DependentUpon>KulüpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciForm.Designer.cs">
+      <DependentUpon>OgrenciForm.cs</DependentUpon>
     </Compile>
     <Compile Include="OgrenciNotlarForm.cs">
       <SubType>Form</SubType>
@@ -75,8 +92,14 @@
     <EmbeddedResource Include="AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DerslerForm.resx">
+      <DependentUpon>DerslerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KulüpForm.resx">
       <DependentUpon>KulüpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciForm.resx">
+      <DependentUpon>OgrenciForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OgrenciNotlarForm.resx">
       <DependentUpon>OgrenciNotlarForm.cs</DependentUpon>
@@ -93,6 +116,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

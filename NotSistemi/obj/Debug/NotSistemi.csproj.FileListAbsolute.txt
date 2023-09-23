@@ -23,3 +23,5 @@ D:\Fatih\DersCSharp\PROJELER\NotOtomasyon\NotSistemi\NotSistemi\obj\Debug\NotSis
 D:\Fatih\DersCSharp\PROJELER\NotOtomasyon\NotSistemi\NotSistemi\obj\Debug\NotSistemi.csproj.CoreCompileInputs.cache
 D:\Fatih\DersCSharp\PROJELER\NotOtomasyon\NotSistemi\NotSistemi\obj\Debug\NotSistemi.exe
 D:\Fatih\DersCSharp\PROJELER\NotOtomasyon\NotSistemi\NotSistemi\obj\Debug\NotSistemi.pdb
+D:\Fatih\DersCSharp\PROJELER\NotOtomasyon\NotSistemi\NotSistemi\obj\Debug\NotSistemi.DerslerForm.resources
+D:\Fatih\DersCSharp\PROJELER\NotOtomasyon\NotSistemi\NotSistemi\obj\Debug\NotSistemi.OgrenciForm.resources

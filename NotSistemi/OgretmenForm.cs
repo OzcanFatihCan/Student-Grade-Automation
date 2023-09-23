@@ -37,5 +37,22 @@ namespace NotSistemi
         {
             BtnKapat.BackColor = Color.Transparent;
         }
+
+        private void BtnDers_Click(object sender, EventArgs e)
+        {
+            DerslerForm fr=new DerslerForm();
+            fr.Show();
+        }
+
+        private void BtnOgrt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnOgr_Click(object sender, EventArgs e)
+        {
+            OgrenciForm fr=new OgrenciForm();
+            fr.Show();
+        }
     }
 }

@@ -120,5 +120,11 @@ namespace NotSistemi
             TxtKlpid.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             TxtKlpad.Text= dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            TxtKlpad.Text = "";
+            TxtKlpid.Text = "";
+        }
     }
 }

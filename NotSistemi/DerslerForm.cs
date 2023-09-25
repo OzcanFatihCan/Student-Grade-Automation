@@ -78,5 +78,11 @@ namespace NotSistemi
             TxtDersid.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             TxtDersad.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            TxtDersad.Text = "";
+            TxtDersid.Text = "";
+        }
     }
 }

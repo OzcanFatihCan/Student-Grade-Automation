@@ -158,5 +158,16 @@ namespace NotSistemi
                 c = "Erkek";
             }
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            TxtOgrenciad.Text = "";
+            TxtOgrenciAra.Text = "";
+            TxtOgrenciid.Text = "";
+            TxtOgrencisoyad.Text = "";
+            CmbOgrenciKlb.Text = "";
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+        }
     }
 }

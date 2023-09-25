@@ -46,16 +46,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.CmbOgrenciKlb = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.TxtOgrencisoyad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.CmbOgrenciKlb = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.TxtOgrenciAra = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -65,6 +66,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -116,9 +118,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(306, 174);
+            this.pictureBox5.Location = new System.Drawing.Point(324, 174);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(80, 40);
+            this.pictureBox5.Size = new System.Drawing.Size(62, 40);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 47;
             this.pictureBox5.TabStop = false;
@@ -180,7 +182,7 @@
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(199, 174);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(80, 40);
+            this.pictureBox3.Size = new System.Drawing.Size(62, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 42;
             this.pictureBox3.TabStop = false;
@@ -262,6 +264,62 @@
             this.panel1.Size = new System.Drawing.Size(374, 239);
             this.panel1.TabIndex = 53;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(29, 203);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 23);
+            this.label6.TabIndex = 59;
+            this.label6.Text = "CİNSİYET:";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.ForeColor = System.Drawing.Color.White;
+            this.radioButton2.Location = new System.Drawing.Point(246, 203);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(76, 27);
+            this.radioButton2.TabIndex = 58;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Erkek";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.ForeColor = System.Drawing.Color.White;
+            this.radioButton1.Location = new System.Drawing.Point(161, 203);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(54, 27);
+            this.radioButton1.TabIndex = 57;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Kız";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // CmbOgrenciKlb
+            // 
+            this.CmbOgrenciKlb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbOgrenciKlb.FormattingEnabled = true;
+            this.CmbOgrenciKlb.Location = new System.Drawing.Point(138, 154);
+            this.CmbOgrenciKlb.Name = "CmbOgrenciKlb";
+            this.CmbOgrenciKlb.Size = new System.Drawing.Size(206, 31);
+            this.CmbOgrenciKlb.TabIndex = 56;
+            this.CmbOgrenciKlb.SelectedIndexChanged += new System.EventHandler(this.CmbOgrenciKlb_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(35, 157);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(89, 23);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "KULÜBÜ:";
+            // 
             // TxtOgrencisoyad
             // 
             this.TxtOgrencisoyad.Location = new System.Drawing.Point(138, 105);
@@ -278,62 +336,6 @@
             this.label4.Size = new System.Drawing.Size(82, 23);
             this.label4.TabIndex = 53;
             this.label4.Text = "SOYADI:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(35, 157);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 23);
-            this.label5.TabIndex = 55;
-            this.label5.Text = "KULÜBÜ:";
-            // 
-            // CmbOgrenciKlb
-            // 
-            this.CmbOgrenciKlb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbOgrenciKlb.FormattingEnabled = true;
-            this.CmbOgrenciKlb.Location = new System.Drawing.Point(138, 154);
-            this.CmbOgrenciKlb.Name = "CmbOgrenciKlb";
-            this.CmbOgrenciKlb.Size = new System.Drawing.Size(206, 31);
-            this.CmbOgrenciKlb.TabIndex = 56;
-            this.CmbOgrenciKlb.SelectedIndexChanged += new System.EventHandler(this.CmbOgrenciKlb_SelectedIndexChanged);
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(161, 203);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(54, 27);
-            this.radioButton1.TabIndex = 57;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Kız";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(246, 203);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(76, 27);
-            this.radioButton2.TabIndex = 58;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Erkek";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(29, 203);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 23);
-            this.label6.TabIndex = 59;
-            this.label6.Text = "CİNSİYET:";
             // 
             // TxtOgrenciAra
             // 
@@ -355,6 +357,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.TxtOgrenciAra);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.BtnListele);
@@ -369,6 +372,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(585, 239);
             this.panel2.TabIndex = 56;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(268, 174);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(50, 40);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 56;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // OgrenciForm
             // 
@@ -401,6 +416,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,5 +451,6 @@
         private System.Windows.Forms.TextBox TxtOgrenciAra;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

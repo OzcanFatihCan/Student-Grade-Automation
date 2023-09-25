@@ -54,5 +54,11 @@ namespace NotSistemi
             OgrenciForm fr=new OgrenciForm();
             fr.Show();
         }
+
+        private void BtnSinav_Click(object sender, EventArgs e)
+        {
+            SinavNotlarForm fr = new SinavNotlarForm();
+            fr.Show();
+        }
     }
 }

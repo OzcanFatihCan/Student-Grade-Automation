@@ -115,6 +115,7 @@
             this.BtnSinav.TabIndex = 4;
             this.BtnSinav.Text = "SINAV NOTLARI";
             this.BtnSinav.UseVisualStyleBackColor = false;
+            this.BtnSinav.Click += new System.EventHandler(this.BtnSinav_Click);
             // 
             // pictureBox4
             // 

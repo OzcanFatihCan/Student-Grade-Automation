@@ -46,7 +46,8 @@ namespace NotSistemi
 
         private void BtnOgrt_Click(object sender, EventArgs e)
         {
-
+            OgretmenAyarForm fr =new OgretmenAyarForm();
+            fr.Show();
         }
 
         private void BtnOgr_Click(object sender, EventArgs e)

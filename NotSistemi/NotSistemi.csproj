@@ -81,6 +81,12 @@
     <Compile Include="OgrenciNotlarForm.Designer.cs">
       <DependentUpon>OgrenciNotlarForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OgretmenAyarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgretmenAyarForm.Designer.cs">
+      <DependentUpon>OgretmenAyarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="OgretmenForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OgrenciNotlarForm.resx">
       <DependentUpon>OgrenciNotlarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgretmenAyarForm.resx">
+      <DependentUpon>OgretmenAyarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OgretmenForm.resx">
       <DependentUpon>OgretmenForm.cs</DependentUpon>

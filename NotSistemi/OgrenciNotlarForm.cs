@@ -49,4 +49,3 @@ namespace NotSistemi
     }
 }
 
-//(DoktorAd+' '+DoktorSoyad)

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -21,7 +22,14 @@ namespace NotSistemi
         {
             OgrenciNotlarForm fr= new OgrenciNotlarForm();
             fr.numara = textBox1.Text;
-            fr.Show();
+            if (int.TryParse(fr.numara, out _))
+                fr.Show();
+            else
+            {
+                MessageBox.Show("Lütfen numara girişi yapınız", "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

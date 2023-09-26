@@ -97,17 +97,31 @@ namespace NotSistemi
             {
                 if (dersVarMi > 0)
                 {
-                    
-                    ds.NotGuncelle(byte.Parse(CmbDers.SelectedValue.ToString()), int.Parse(TxtOgrenciid.Text), byte.Parse(TxtSinav1.Text), byte.Parse(TxtSinav2.Text), byte.Parse(TxtSinav3.Text), byte.Parse(TxtProje.Text), decimal.Parse(TxtOrtalama.Text), bool.Parse(TxtDurum.Text), notid);
-                    MessageBox.Show("Güncelleme yapıldı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //datagrid güncelle
-                    dataGridView1.DataSource = ds.NotGetir(int.Parse(TxtOgrenciid.Text));
+                    try
+                    {
+
+                        ds.NotGuncelle(byte.Parse(CmbDers.SelectedValue.ToString()), int.Parse(TxtOgrenciid.Text), byte.Parse(TxtSinav1.Text), byte.Parse(TxtSinav2.Text), byte.Parse(TxtSinav3.Text), byte.Parse(TxtProje.Text), decimal.Parse(TxtOrtalama.Text), bool.Parse(TxtDurum.Text), notid);
+                        MessageBox.Show("Güncelleme yapıldı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //datagrid güncelle
+                        dataGridView1.DataSource = ds.NotGetir(int.Parse(TxtOgrenciid.Text));
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Lütfen Sayısal değer giriniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("İlgili derse ait kayıt açıldı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ds.NotEkle(byte.Parse(CmbDers.SelectedValue.ToString()), int.Parse(TxtOgrenciid.Text), byte.Parse(TxtSinav1.Text), byte.Parse(TxtSinav2.Text), byte.Parse(TxtSinav3.Text), byte.Parse(TxtProje.Text), decimal.Parse(TxtOrtalama.Text), bool.Parse(TxtDurum.Text));
-                    dataGridView1.DataSource = ds.NotGetir(int.Parse(TxtOgrenciid.Text));
+                    try
+                    {
+                        ds.NotEkle(byte.Parse(CmbDers.SelectedValue.ToString()), int.Parse(TxtOgrenciid.Text), byte.Parse(TxtSinav1.Text), byte.Parse(TxtSinav2.Text), byte.Parse(TxtSinav3.Text), byte.Parse(TxtProje.Text), decimal.Parse(TxtOrtalama.Text), bool.Parse(TxtDurum.Text));
+                        dataGridView1.DataSource = ds.NotGetir(int.Parse(TxtOgrenciid.Text));
+                        MessageBox.Show("İlgili derse ait kayıt açıldı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Lütfen Sayısal değer giriniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
             }
             else

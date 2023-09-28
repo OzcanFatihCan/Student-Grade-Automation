@@ -4,10 +4,15 @@ Bu projede ilişkili tablo yapıları kullanılmıştır.
 Projenin çalışabilmesi için VS2022 içerisinde Project-> Add New Item -> Data ->Dataset DB bağlantısı oluşturulmalıdır.
 Dataset üzerinde oluşturulan TableAdapterlar ile CRUD işlemleri yapılmıştır. 
 Dosyalar arasında bulunan DB'nin içeriğini, SQL Server Management Studio uygulamasının kurulu olduğu dizine gidip MSSQL içerisinde bulunan DATA klasörünün içerisine eklemelisiniz.
+
 Tablolar arası ilişkiler:
+
 Tbl_Kulüpler kulüpid -> Tbl_Ogrenciler -> OgrKulüp 
+
 Tbl_Ogrenciler Ogrid -> Tbl_Notlar -> Ogrid
+
 Tbl_Notlar Dersid -> Tbl_Dersler -> Dersid
+
 Tbl_Dersler Dersid -> Tbl_Ogretmenler -> OgrtBrans 
 
 Eklenilen DB verileriyle beraber yukarıdaki ilişkiler gelmezse, ilgili database içerisinde diyagram kısmında yukarıdaki ilişkiler oluşturulmalıdır.
